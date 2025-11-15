@@ -13,9 +13,9 @@
       "sizes": "4096x2730"
     },
     {
-      "src": "logo.jpg",
-      "type": "image/jpeg",
-      "sizes": "486x279"
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "128x48"
     }
   ],
   "start_url": ".",
