@@ -1,4 +1,4 @@
-import logo from '/logo.jpg';
+import logo from '/logo.png';
 import './index.css';
 import { Link } from 'react-router';
 

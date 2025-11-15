@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import logo from '/logo.png';
 import heroImage from '../../assets/hero_image.jpg';
 import Spacing from '../../components/Spacing';
 import './index.css';
@@ -8,10 +9,11 @@ function Main() {
   return (
     <>
       <div className="main-container">
-        <Spacing />
-
         <div className="container">
           <div className="welcome">
+            <div className="logo">
+              <img src={logo} alt="logo" />
+            </div>
             <h1>TYCA 더청년컨설팅연대</h1>
             <p>the youth consulting alliance</p>
           </div>
@@ -143,8 +145,6 @@ function Main() {
             </p>
           </div>
         </div>
-
-        <Spacing />
       </div>
     </>
   );

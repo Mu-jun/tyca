@@ -24,6 +24,12 @@
   display: flex;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 52px;
+}
+
 .card {
   --bs-card-shadow: 10px 10px 40px rgba(var(--bs-box-shadow-rgb), 0.06);
   display: flex;
