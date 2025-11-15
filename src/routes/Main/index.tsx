@@ -11,7 +11,7 @@ function Main() {
       <div className="main-container">
         <div className="container">
           <div className="welcome">
-            <div className="logo">
+            <div className="logo mb-3">
               <img src={logo} alt="logo" />
             </div>
             <h1>TYCA 더청년컨설팅연대</h1>
@@ -34,10 +34,12 @@ function Main() {
             <h2>다양한 프로그램들</h2>
             <p>
               한국청년성장컨설팅연구소는 청소년들의 성장과 발전을 촉진하는
-              비영리 단체로, 잠재력을 발취하고
+              비영리 단체로,
               <br />
-              성공을 이룰 수 있도록 다양한 프로그램과 서비스를 제공합니다. 함께
-              더 나은 청년의 미래를 지원하도록 하겠습니다.
+              잠재력을 발취하고 성공을 이룰 수 있도록 다양한 프로그램과 서비스를
+              제공합니다.
+              <br />
+              함께 더 나은 청년의 미래를 지원하도록 하겠습니다.
             </p>
           </div>
           <div className="btn-wrap">
@@ -49,10 +51,10 @@ function Main() {
 
         <Spacing size={55} />
 
-        <div className="container">
-          <div className="row">
-            <div className="card">
-              <h3>01</h3>
+        <div className="row">
+          <div className="card">
+            <h3>01</h3>
+            <div>
               <h4>청년심리상담</h4>
               <p>
                 청년의 정서적 안정과 정신건강의 회복을 위해서는 청년심리상담을
@@ -60,34 +62,38 @@ function Main() {
                 불러오는 심리적 원인이나 상황에 대해 효과적으로 대응할 수 있도록
                 합니다.
               </p>
-              <Link className="btn icon primary" to={'/consulting'}>
-                <img src={vectorStroke} />
-              </Link>
             </div>
-            <div className="card">
-              <h3>02</h3>
+            <Link className="btn icon primary" to={'/consulting'}>
+              <img src={vectorStroke} />
+            </Link>
+          </div>
+          <div className="card">
+            <h3>02</h3>
+            <div>
               <h4>마음건강회복</h4>
               <p>
                 마음건강은 현재의 자기 자신과 내면에 집중함으로써 외부와
                 내부로부터 받게 되는 스트레스로 인해 흔들리거나 부정적인 감정에
                 빠지지 않도록 내면의 힘을 기르는 데 효과적인 방법입니다.
               </p>
-              <Link className="btn icon primary" to={'/consulting'}>
-                <img src={vectorStroke} />
-              </Link>
             </div>
-            <div className="card">
-              <h3>03</h3>
+            <Link className="btn icon primary" to={'/consulting'}>
+              <img src={vectorStroke} />
+            </Link>
+          </div>
+          <div className="card">
+            <h3>03</h3>
+            <div>
               <h4>멘탈강화훈련</h4>
               <p>
                 전문성을 갖춘 심리상담사의 도움을 받아 다양한 심리치료기법을
                 받게 되면 마음의 여유를 가지게 되어 현재의자기 자신이 가지고
                 있는 멘탈을 강화함으로써 치유 효과를 얻을 수 있습니다.
               </p>
-              <Link className="btn icon primary" to={'/consulting'}>
-                <img src={vectorStroke} />
-              </Link>
             </div>
+            <Link className="btn icon primary" to={'/consulting'}>
+              <img src={vectorStroke} />
+            </Link>
           </div>
         </div>
 

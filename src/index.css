@@ -58,7 +58,7 @@ h4 {
 .btn-wrap {
   display: flex;
   align-items: flex-end;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .btn {

@@ -27,6 +27,7 @@
   flex-direction: column;
   justify-items: center;
   width: 50vw;
+  max-width: 80%;
   padding: 65px 55px;
   border-radius: 1rem; /* 둥근 모서리 */
   margin: 0 auto;
@@ -44,13 +45,13 @@
   /* 꼬리 위치 설정 (오른쪽 가운데) */
   top: 50%;
   transform: translateY(-50%);
-  right: 35px; /* 말풍선 본체 밖으로 빼기 */
+  right: -35px; /* 말풍선 본체 밖으로 빼기 */
   z-index: -99;
   /* 삼각형 만들기 (border 트릭) */
-  border-width: 35px 0 50px 35px; /* 위, 오른쪽, 아래, 왼쪽 테두리 두께 */
+  border-width: 35px 0 35px 50px; /* 위, 오른쪽, 아래, 왼쪽 테두리 두께 */
   border-style: solid;
-  border-color: transparent transparent var(--bs-chat-bubble-bg) transparent;
-  /* 투명 / 투명 / 배경색 / 투명 */
+  border-color: transparent transparent transparent var(--bs-chat-bubble-bg);
+  /* 투명 / 투명 / 투명 / 배경색*/
 }
 
 .chat-bubble.left {
