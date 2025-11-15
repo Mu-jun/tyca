@@ -8,14 +8,14 @@
       "type": "image/x-icon"
     },
     {
-      "src": "vite.svg",
-      "type": "image/svg+xml",
-      "sizes": "256x257"
+      "src": "hero_image.jpg",
+      "type": "image/jpeg",
+      "sizes": "4096x2730"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "logo.jpg",
+      "type": "image/jpeg",
+      "sizes": "486x279"
     }
   ],
   "start_url": ".",
