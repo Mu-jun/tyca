@@ -1,9 +1,12 @@
 import { Link } from 'react-router';
 import logo from '/logo.png';
 import heroImage from '../../assets/hero_image.jpg';
+import TelIcon from '../../assets/Icon_Tel.png';
 import Spacing from '../../components/Spacing';
 import './index.css';
 import vectorStroke from '../../assets/Vector(Stroke).svg';
+import FAQCard from '../../components/FAQCard';
+import faqList from '../../assets/faq.json';
 
 function Main() {
   return (
@@ -101,8 +104,16 @@ function Main() {
 
         <div className="content">
           <div className="flex-1">
-            <h2>프로그램 후기</h2>
-            <p>수강생들의 생생한 후기를 전달해 드립니다.</p>
+            <h2>자주하는 질문</h2>
+            <p>
+              기타 질문이 있으신 경우 아래의 연락처로 연락해주시기 바랍니다.
+            </p>
+            <p style={{ display: 'flex', alignItems: 'center' }}>
+              <span className="me-2">
+                <img src={TelIcon} />
+              </span>
+              010-4668-0739
+            </p>
           </div>
           <div className="btn-wrap">
             <Link className="btn" to={'/consulting'}>
@@ -111,9 +122,15 @@ function Main() {
           </div>
         </div>
 
-        <Spacing />
+        <Spacing size={70} />
 
-        <div className="container chat">
+        <div className="flex flex-col items-end">
+          {faqList.map((item, index) => (
+            <FAQCard key={index} question={item.q} answer={item.a} />
+          ))}
+        </div>
+
+        {/* <div className="container chat"> 
           <div className="chat-bubble left">
             <h4>불안했던 마음이 편안해졌어요...!</h4>
             <Spacing size={35} />
@@ -150,7 +167,7 @@ function Main() {
               되었습니다.
             </p>
           </div>
-        </div>
+        </div>*/}
       </div>
     </>
   );

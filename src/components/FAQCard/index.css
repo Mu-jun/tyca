@@ -1,0 +1,109 @@
+.faq-card {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: start;
+  margin: 8px 0;
+  width: 100%;
+  max-width: 942px;
+}
+
+.faq-card > .title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -2.5%;
+  color: #111111;
+
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-card > .content {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -2.5%;
+  color: #767676;
+  white-space: pre-line;
+}
+
+/* ---------------------------------- */
+/* 1. 변수 설정 및 기본 스타일 */
+/* ---------------------------------- */
+:root {
+  --icon-size: 52px;
+  --line-size: 17.3px;
+  --line-thickness: 2px;
+  --default-bg: #f7f7f7; /* 회색 */
+  --hover-bg: #e9f6ff; /* 하늘색 */
+  --default-color: #111111; /* 검은색 */
+  --hover-color: #005eff; /* 파란색 */
+  --transition-speed: 0.5s;
+}
+
+/* 햄버거/컨테이너 설정 */
+.faq-collapse-icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 배경색 애니메이션 */
+  background-color: var(--default-bg);
+  border-radius: 8px;
+  transition: background-color var(--transition-speed);
+}
+
+/* 선 공통 스타일 */
+.line,
+.line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: var(--line-thickness);
+  width: var(--line-size); /* 컨테이너 너비와 동일하게 설정 */
+  background-color: var(--default-color);
+  border-radius: 2px;
+  /* 선 색상 애니메이션 */
+  transition: background-color var(--transition-speed),
+    transform var(--transition-speed);
+}
+
+.line::after {
+  transform: rotate(90deg);
+}
+
+/* ---------------------------------- */
+/* 2. 호버 시 애니메이션 (변화) */
+/* ---------------------------------- */
+
+/* 1. 배경색, 선 색상 변화 */
+.faq-collapse-icon:hover,
+.faq-collapse-icon.active {
+  background-color: var(--hover-bg); /* 하늘색 */
+}
+.faq-collapse-icon:hover .line,
+.faq-collapse-icon:hover .line::after,
+.faq-collapse-icon.active .line,
+.faq-collapse-icon.active .line::after {
+  background-color: var(--hover-color); /* 파란색 */
+}
+
+/* 2. + 모양에서 x 모양으로 변형 */
+
+/* 중앙선: 수직선으로 변형 */
+.faq-collapse-icon:hover .line,
+.faq-collapse-icon.active .line {
+  transform: rotate(45deg); /* 90도 회전하여 수직선으로 만듭니다. */
+}
+
+.faq-collapse-icon:hover .line::after,
+.faq-collapse-icon.active .line::after {
+  /* 중앙으로 이동 후, 반시계 방향 45도 회전 */
+  transform: rotate(90deg);
+}

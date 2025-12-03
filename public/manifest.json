@@ -16,6 +16,11 @@
       "src": "logo.png",
       "type": "image/png",
       "sizes": "128x48"
+    },
+    {
+      "src": "Icon_Tel.png",
+      "type": "image/png",
+      "sizes": "18x18"
     }
   ],
   "start_url": ".",
