@@ -58,7 +58,7 @@ function Main() {
           <div className="card">
             <h3>01</h3>
             <div>
-              <h4>청년심리상담</h4>
+              <h5>청년심리상담</h5>
               <p>
                 청년의 정서적 안정과 정신건강의 회복을 위해서는 청년심리상담을
                 통해 자아회복 탄력성을 키우면서 자존감을 높이고, 자신의 우울함을
@@ -73,7 +73,7 @@ function Main() {
           <div className="card">
             <h3>02</h3>
             <div>
-              <h4>마음건강회복</h4>
+              <h5>마음건강회복</h5>
               <p>
                 마음건강은 현재의 자기 자신과 내면에 집중함으로써 외부와
                 내부로부터 받게 되는 스트레스로 인해 흔들리거나 부정적인 감정에
@@ -87,7 +87,7 @@ function Main() {
           <div className="card">
             <h3>03</h3>
             <div>
-              <h4>멘탈강화훈련</h4>
+              <h5>멘탈강화훈련</h5>
               <p>
                 전문성을 갖춘 심리상담사의 도움을 받아 다양한 심리치료기법을
                 받게 되면 마음의 여유를 가지게 되어 현재의자기 자신이 가지고
@@ -132,7 +132,7 @@ function Main() {
 
         {/* <div className="container chat"> 
           <div className="chat-bubble left">
-            <h4>불안했던 마음이 편안해졌어요...!</h4>
+            <h5>불안했던 마음이 편안해졌어요...!</h5>
             <Spacing size={35} />
             <p>
               직장을 다니면서 인간관계에 대해서 회의감을 많이 느꼈어요. 힘들어서
@@ -144,7 +144,7 @@ function Main() {
             </p>
           </div>
           <div className="chat-bubble right">
-            <h4>불안했던 마음이 편안해졌어요...!</h4>
+            <h5>불안했던 마음이 편안해졌어요...!</h5>
             <Spacing size={35} />
             <p>
               직장을 다니면서 인간관계에 대해서 회의감을 많이 느꼈어요. 힘들어서
@@ -156,7 +156,7 @@ function Main() {
             </p>
           </div>
           <div className="chat-bubble left">
-            <h4>불안했던 마음이 편안해졌어요...!</h4>
+            <h5>불안했던 마음이 편안해졌어요...!</h5>
             <Spacing size={35} />
             <p>
               직장을 다니면서 인간관계에 대해서 회의감을 많이 느꼈어요. 힘들어서
